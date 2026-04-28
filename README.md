@@ -1,2 +1,0 @@
-# kkks-pos-app
-
