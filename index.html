@@ -16,12 +16,14 @@
             .split("&")
             .map(function (s) { return s.replace(/~and~/g, "&"); })
             .join("?");
-          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+          // Only strip a trailing "/" if present; otherwise keep pathname intact.
+          var basePath = l.pathname.endsWith("/") ? l.pathname.slice(0, -1) : l.pathname;
+          window.history.replaceState(null, null, basePath + decoded + l.hash);
         }
       })(window.location);
     </script>
     <style>@media print { body { background: #fff; } .no-print { display: none !important; } }</style>
-    <script type="module" crossorigin src="/kkks-pos-app/assets/index-C7ctk2jD.js"></script>
+    <script type="module" crossorigin src="/kkks-pos-app/assets/index-BRVhcjZ1.js"></script>
     <link rel="stylesheet" crossorigin href="/kkks-pos-app/assets/index-DCaa1Ar6.css">
   </head>
   <body>
