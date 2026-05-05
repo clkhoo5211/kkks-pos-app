@@ -1,6 +1,6 @@
 {
   "app": "pos-app",
-  "commit": "e122d29",
-  "builtAt": "2026-05-05T06:34:15.580Z",
-  "baseUrl": "https://kkks-admin-app.vercel.app"
+  "commit": "f003fa1",
+  "builtAt": "2026-05-05T13:26:17.962Z",
+  "baseUrl": "https://kkks-admin-app.vercel.app/api/v1"
 }
